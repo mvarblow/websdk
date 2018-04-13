@@ -10,7 +10,7 @@
 
   <Target Name="Build" 
           Condition="'$(SkipBuild)' != 'true'"
-          DependsOnTargets="_Build;Test;SignBinaries;Package;SignPackages"/>
+          DependsOnTargets="_Build;Test;SignBinaries;Package"/>
 
   <PropertyGroup>
     <_BuildDependsOn>
